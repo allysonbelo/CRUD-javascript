@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Básico</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <header>
+        <h1>CRUD</h1>
+    </header>
+
+    <main>
+        <div class="card">
+
+            <div class="title">
+                <h2>Produtos</h2>
+                <span>Lista de produtos da minha loja</span>
+            </div>
+
+            <div class="card">
+                <div class="line-input">
+                    <label for="">Produto</label>
+                    <input type="text" id="produto" placeholder="Nome do produto">
+                </div>
+                <div class="line-input">
+                    <label for="">Preço</label>
+                    <input type="number" required id="preco" placeholder="Valor do produto">
+                </div>
+                <button id="btn-salvar" onclick="produto.salvar()">Salvar</button>
+                <button onclick="produto.cancelar()">Cancelar</button>
+            </div>
+
+            <div class="content">
+                <table border="1">
+                    <thead>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Valor</th>
+                        <th>Ações</th>
+                    </thead>
+                    <tbody id="tbody" class="center">
+                        
+                    </tbody>
+                </table>
+            </div>
+
+
+    </main>
+
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
